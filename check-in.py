@@ -7,19 +7,19 @@ false = False
 true = True
 
 # SMTP config
-mail_user = "existo@163.com"  # username
-mail_pass = "DZSDYGWPKWZYFBOU"  # token
+mail_user = ""  # username
+mail_pass = ""  # token
 
-sender = 'existo@163.com'
-receivers = ['2659612923@qq.com']
+sender = ''
+receivers = []
 
 # set authorization & data
-userAuthorization = 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJFeGlzdG8iLCJvcGVuSWQiOiJvb3JvRTVzM1A4SHVwUVNKMDhfclptbjIzMkNBIiwiaXNzIjoiYXBpLmppZWxvbmcuY28iLCJhdWQiOiJjbGllbnQuamllbG9uZy5jbyIsImlhdCI6MTY1MjE5MTQwMiwiZXhwIjoxNjUyNDUwNjAyfQ.L8CEGZXdUUodO9Ql75XhsdxsYAF-fMWxdNnCw5MQEzs'
+userAuthorization = ''
 userData = {
     "Id": 0,
-    "ThreadId": 43364841,
+    "ThreadId": ,
     "Number": "1",
-    "Signature": "叶鹏",
+    "Signature": "",
     "RecordValues": [],
     "DateTarget": "",
     "IsNeedManualAudit": false,
@@ -39,7 +39,7 @@ def sendEmail(sendingType, msg):
         message['From'] = Header(sender, 'utf-8')  # 发送者
         # message['To'] = Header("me", 'utf-8')  # 接收者
 
-        subject = '20级计算机类3班晚点名结果'
+        subject = ''
         message['Subject'] = Header(subject, 'utf-8')
 
         # sending process
